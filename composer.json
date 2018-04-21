@@ -1,0 +1,28 @@
+{
+    "name": "turkalp/language",
+    "description": "language",
+    "type": "library",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Türkalp Burak KAYRANCIOĞLU",
+            "email": "bkayranci@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Turkalp\\Language\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Turkalp\\Language\\LanguageServiceProvider"
+            ]
+        }
+    }
+}
