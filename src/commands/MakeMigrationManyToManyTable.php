@@ -87,7 +87,7 @@ class {$className} extends Migration
 }
 ";
 
-        $path = database_path('migrations/'.str_replace('-', '_', now()->toDateString() ).'_create_language_'.$modelName.'_many_to_many_table.php');
+        $path = database_path('migrations/'.date('Y_m_d').'_create_language_'.$modelName.'_many_to_many_table.php');
         fwrite(fopen($path, 'w'), $content);
     }
 }
